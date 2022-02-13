@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 sleep 60s
 ## Installing BBR
 cd $HOME
@@ -6,14 +6,8 @@ cd $HOME
 ## This part of the script is modified from https://github.com/KozakaiAya/TCP_BBR
 apt-get -qqy install dkms
 apt-get -qqy install linux-headers-$(uname -r)
-distro_codename="$(source /etc/os-release && printf "%s" "${VERSION_CODENAME}")"
-if [[ $distro_codename = buster ]]; then
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/5.10.0/tcp_bbrx.c
-    kernel_ver=5.10.0
-elif [[ $distro_codename = bullseye ]] ; then
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/5.15.0/tcp_bbrx.c
-    kernel_ver=5.15.0
-fi
+wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/5.10.0/tcp_bbrx.c
+kernel_ver=5.10.0
 algo=bbrx
 bbr_file=tcp_$algo
 bbr_src=$bbr_file.c

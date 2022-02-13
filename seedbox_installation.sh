@@ -24,7 +24,7 @@ function qBittorrent {
 ## Deluge
 function Deluge {
     warn_2
-    source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/Deluge/Deluge_install.sh)
+    source <(wget -qO- https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/Deluge/Deluge_install.sh)
     Deluge_download
     Deluge_install
     Deluge_config

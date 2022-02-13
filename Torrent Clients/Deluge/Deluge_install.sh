@@ -25,7 +25,7 @@ function Deluge_download {
  #      done
  #      apt-get -qqy install python3-geoip python3-dbus  python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-appindicator3 python3-pygame libnotify4 librsvg2-common xdg-utils
     fi
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/Deluge/libtorrent/libtorrent-rasterbar_$libtorrent_Ver-amd64.deb
+    wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/Deluge/libtorrent/libtorrent-rasterbar_1.1.14-amd64.deb
     tput sgr0; clear
 }
 
@@ -212,8 +212,8 @@ EOF
 
     ## Setting up WebUI config
     DWSALT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/Deluge/deluge.Userpass.py
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/Deluge/deluge.addHost.py
+    wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/Deluge/deluge.Userpass.py
+    wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/Deluge/deluge.addHost.py
     DWP=$(python2 /root/deluge.Userpass.py $password $DWSALT)
 	DUDID=$(python2 /root/deluge.addHost.py)
     cat << EOF >/home/$username/.config/deluge/web.conf

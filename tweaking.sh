@@ -466,16 +466,10 @@ EOF
 function Tweaked_BBR {
     ## Update Kernel
     normal_1; echo "Updating Kernel"; normal_2
-    distro_codename="$(source /etc/os-release && printf "%s" "${VERSION_CODENAME}")"
-    if [[ $distro_codename = buster ]]; then
     echo "deb http://deb.debian.org/debian buster-backports main" | sudo tee -a /etc/apt/sources.list
     apt-get -qqy update && apt -qqyt buster-backports upgrade
-    elif [[ $distro_codename = bullseye ]]; then
-    echo "deb http://deb.debian.org/debian bullseye-backports main" | sudo tee -a /etc/apt/sources.list
-    apt-get -qqy update && apt -qqyt bullseye-backports upgrade
-    fi
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/BBR.sh && chmod +x BBR.sh
     ## Install tweaked BBR automatically on reboot
+    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/BBR.sh && chmod +x BBR.sh
     cat << EOF > /etc/systemd/system/bbrinstall.service
 [Unit]
 Description=BBRinstall
@@ -561,4 +555,3 @@ function Deluge_libtorrent {
 EOF
     systemctl start deluged@$username
 }
-

@@ -469,7 +469,7 @@ function Tweaked_BBR {
     echo "deb http://deb.debian.org/debian buster-backports main" | sudo tee -a /etc/apt/sources.list
     apt-get -qqy update && apt -qqyt buster-backports upgrade
     ## Install tweaked BBR automatically on reboot
-    wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/BBR/BBR.sh && chmod +x BBR.sh
+    wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Miscellaneous/BBR/BBR.sh && chmod +x BBR.sh
     cat << EOF > /etc/systemd/system/bbrinstall.service
 [Unit]
 Description=BBRinstall

@@ -11,7 +11,7 @@ function qBittorrent_download {
                 version=4.1.9.1; wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.1.9.1%20-%20libtorrent-1_1_14/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
                 ;;
             "qBittorrent 4.3.3 - libtorrent-v1.2.13")
-                version=4.3.3; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.3%20-%20libtorrent-v1.2.13/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
+                version=4.3.3; wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.3%20-%20libtorrent-v1.2.13/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
                 ;;
             "qBittorrent 4.3.4.1 - libtorrent-v1.2.13")
                 version=4.3.4.1; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.4.1%20-%20libtorrent-v1.2.13/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
@@ -20,7 +20,7 @@ function qBittorrent_download {
                 version=4.3.5; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.5%20-%20libtorrent-v1.2.13/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
                 ;;
             "qBittorrent 4.3.6 - libtorrent-v1.2.14")
-                version=4.3.6; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.6%20-%20libtorrent-v1.2.14/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
+                version=4.3.6; wget https://raw.githubusercontent.com/thegodfatheroflove/Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.6%20-%20libtorrent-v1.2.14/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
                 ;;
             "qBittorrent 4.3.7 - libtorrent-v1.2.14")
                 version=4.3.7; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.3.7%20-%20libtorrent-v1.2.14/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break

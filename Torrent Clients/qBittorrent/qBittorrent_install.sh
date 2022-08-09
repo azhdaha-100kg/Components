@@ -33,6 +33,7 @@ function qBittorrent_download {
                 ;;
             "qBittorrent 4.4.0beta2 - libtorrent-v2.0.4")
                 version=4.4.0; wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.4.0beta2%20-%20libtorrent-v2.0.4/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
+                ;;
             "qBittorrent 4.4.3.1 - libtorrent-v1.2.16")
                 version=4.4.3.1; wget https://raw.githubusercontent.com/azhdaha-100kg/Components/main/Torrent%20Clients/qBittorrent/qBittorrent/qBittorrent%204.4.3.1%20-%20libtorrent-v1.2.16/qbittorrent-nox && chmod +x $HOME/qbittorrent-nox; break
                 ;;
